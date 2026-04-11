@@ -4,11 +4,13 @@ This project was built using HTML, CSS, Javascript, Node.js, Express.js and EJS.
 This project has no database and thus the blog posts created are not stored on any database.</p>
 
 <h2>TEST IT LOCALLY</h2>
-<p>clone this project:</p>
+<h3>To clone this project:</h3>
 <em>git clone https://github.com/momotimi/blublog.git</em>
 
-<strong>Run it locally</strong>
-<p>install the required packages: <em>npm install</em></p>
-<p></p>run server: <em>node index.js</em></p>
+<h4>Run it locally</h4>
+<p><strong>install the required packages:</strong></p>
+<em>npm install</em>
+<p><strong>run server:</strong></p>
+<em>node index.js</em>
 
 <h3><i>Thanks, looking forward to hearing your review.</i></h3>
