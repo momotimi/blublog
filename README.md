@@ -7,10 +7,10 @@ This project has no database and thus the blog posts created are not stored on a
 <h3>To clone this project:</h3>
 <em>git clone https://github.com/momotimi/blublog.git</em>
 
-<h4>Run it locally</h4>
-<p><strong>install the required packages:</strong></p>
-<em>npm install</em>
-<p><strong>run server:</strong></p>
+<h4><u>Run it locally</u></h4>
+<strong>install the required packages:</strong>
+<em>npm install</em><br><br>
+<strong>run server:</strong>
 <em>node index.js</em>
 
 <h3><i>Thanks, looking forward to hearing your review.</i></h3>
