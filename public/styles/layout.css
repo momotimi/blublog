@@ -1,0 +1,193 @@
+html, body{
+    font-size: 14px;
+}
+
+/*hide element*/
+.visible{
+    display: none;
+}
+
+h1, h2, h3, h4, h5, p{
+    margin-top: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 36px;
+    color:rgb(46, 28, 0);
+}
+h2{
+    font-size: 28px;
+    color:rgb(46, 28, 0);
+}
+h3{
+    font-size: 24px;
+    color:rgb(46, 28, 0);
+}
+h4{
+    font-size: 18px;
+    color:rgb(46, 28, 0);
+}
+
+label{
+    color:rgb(99, 59, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button{
+    color:rgb(99, 59, 0);
+    background-color:rgb(255, 214, 154);
+    border: 1px solid rgb(255, 186, 83);
+}
+
+/* input border stylings */
+.b{
+    outline: none;
+    border: 1px solid rgb(99, 59, 0);
+    border-radius: 10px;
+}
+
+main{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#update-post{
+    margin-top: 40px;
+}
+
+#create-post, .update-post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* form stylings */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input{
+    height: 40px;
+    padding: 0px 20px;
+    
+}
+textarea{
+    height: 400px;
+    padding: 20px;
+}
+
+#create-post{
+    margin-top: 40px;
+}
+.submit{
+    width: fit-content;
+}
+
+/*create post button*/
+div .create-btn{
+    width: fit-content;
+    padding: 12px;
+}
+
+/*edit and delete button alignment*/
+.edit-delete-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*post thumbnails*/
+.thumbnails{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px rgba(99, 59, 0, 0.123);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+.thumbnails h3{
+    font-size: 18px;
+}
+.thumbnails p{
+    font-size: 13px;
+}
+.thumbnails a{
+    background: linear-gradient(to right, rgb(255, 214, 154), white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: 100%;
+    color: rgb(99, 59, 0);
+}
+
+#view-post{
+    margin-top: 50px;
+}
+
+.blog-content{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.blog-texts-content{
+    font-size: 18px;
+}
+
+.d-contents{
+    padding: 40px;
+    box-shadow: 1px 1px 2px 2px lightgray;
+}
+
+
+/* RESPONSIVE VIEW */
+@media screen and (max-width: 540px){
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    /*edit and delete button alignment*/
+    .edit-delete-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .thumbnails{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        box-shadow: 1px 1px 2px 2px rgba(99, 59, 0, 0.123);
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .thumbnails a{
+        background: linear-gradient(to right, rgb(255, 214, 154), white);
+        padding: 15px 30px;
+        border-radius: 5px;
+        width: fit-content;
+        color: rgb(99, 59, 0);
+    }
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS STYLES-->
+    <link rel="stylesheet" href="/styles/header.css"> <!--header.css-->
+    <link rel="stylesheet" href="/styles/layout.css"> <!--layout.css-->
+    <link rel="stylesheet" href="/styles/footer.css"> <!--footer.css-->
+
+    <title>blublog</title>
+</head>
+<body>
+    <%- include('partials/header.html') %>
+    
+    <main id="main">
+        
+        <div class="main">
+            <div id="create-post-div">
+                
+                <div>
+                    <button class="create-btn">Creat New Post</button>
+                </div>
+
+                <div class="create-post-form visible">
+
+                    <form action="/" method="POST" id="create-post">
+                        <label for="post-title">Post Title</label>
+                        <input class="b" type="text" name="post-title">
+                        <label for="post-content">Post Content</label>
+                        <textarea class="b" name="post-content" id="text-area"></textarea>
+                        <input type="submit" value="Create Post" class="submit button">
+                    </form>
+
+                </div>
+            </div>
+
+            <div id="update-post">
+
+                <% if(postToEdit){ %>
+                    <h3>Update Post</h3>
+                    <form class="update-post" action="/edit/<%= postToEdit.id %>" method="POST">
+                        <label for="title">Post Title</label>
+                        <input class="b" type="text" name="title" value="<%= postToEdit.title %>">
+                        <label for="content">Post Content</label>
+                        <textarea class="b" name="content" id="text-area"><%= postToEdit.content %></textarea>
+                        <input type="submit" value="Update Blog Post" class="submit button hide">
+                    </form>
+                <% } %>
+            </div>
+            
+            <div id="view-post">
+
+                <h3>Your Blog Posts</h3>
+                <% if(posts.length === 0){ %>
+                    <h4>No Blog Post created yet, create your first Blog Post.</h4>
+                <% }else{ %>
+                    <% posts.forEach(function(d, index){ %>
+                        <div class="thumbnails">
+                            <a href="/?d=<%= index %>">
+                                <h3><%= d.title %></h3>
+                                <p class="t-content"><%= d.content.substring(0, 50) %>...</p>
+                            </a>
+
+                            <div class="edit-delete-btn">
+                                
+                                <form action="/edit/<%= d.id %>">
+                                    <input type="submit" value="EDIT" class="button button">
+                                </form>
+
+                                <form action="/delete/<%= d.id %>" method="POST">
+                                    <input type="submit" value="DELETE" class="button button">
+                                </form>
+                            </div>
+                        </div>
+                    <% }); %>
+                <% } %>
+
+            </div>
+
+            <div class="blog-content">
+                <% if(clickedPost){ %>
+
+                    <div class="d-contents">
+                        <h3><%= clickedPost.title %></h3>
+                        <hr/>
+                        <p class="blog-texts-content"><%= clickedPost.content %></p>
+                    </div>                    
+
+                <% }else if(!clickedPost && posts.length !== 0){ %>
+
+                    <h4>Clikck on any of the Blog Posts to view it's contents</h4>
+
+                <% }else{ %>
+                    
+                <% } %>
+            </div>
+        </div>
+
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+
+    <script src="/js/toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(99, 59, 0), rgb(255, 214, 154));
+    height: 70dvh;
+    font-size: 18px;
+    color: rgb(61, 37, 0);
+}
+
