@@ -1,13 +1,14 @@
-A capstone project of a blog where users can perform simple CRUD (Create Read Update Delete) function.
+<h1>blublog</h1>
+<p>blueblog is a capstone project of a blog where users can perform simple CRUD (Create Read Update Delete) function.
 This project was built using HTML, CSS, Javascript, Node.js, Express.js and EJS.
-This project has no database and thus the blog posts created are not stored on any database.
+This project has no database and thus the blog posts created are not stored on any database.</p>
 
-<h1>TEST IT LOCALLY</h1>
-clone this project:<br>
-git clone https://github.com/momotimi/blublog.git
+<h2>TEST IT LOCALLY</h2>
+<p>clone this project:</p>
+<em>git clone https://github.com/momotimi/blublog.git</em>
 
 <strong>Run it locally</strong>
-<p>install the required packages: npm install</p>
-<p></p>run server: node index.js</p>
+<p>install the required packages: <em>npm install</em></p>
+<p></p>run server: <em>node index.js</em></p>
 
-Thanks, looking forward to hearing your review.
+<h3><i>Thanks, looking forward to hearing your review.</i></h3>
