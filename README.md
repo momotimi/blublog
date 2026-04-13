@@ -13,4 +13,5 @@ This project has no database and thus the blog posts created are not stored on a
 <strong>run server:</strong>
 <em>node index.js</em>
 <hr>
+go to localhost:300 on your browser to test the blog web app
 <h3><i>Thanks, looking forward to hearing your review.</i></h3>
